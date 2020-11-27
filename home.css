@@ -1,0 +1,92 @@
+
+
+.bd{
+    background-image: url(pic/hmback.jpg);
+    background-attachment:none;
+    background-repeat:no-repeat;
+}
+h2{
+  text-align: center;
+}
+
+
+
+
+
+.container {
+    position: sticky;
+    text-align: justify;
+    color:white;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px; 
+    line-height: 25px;
+
+    }
+    .top-left {
+   position: sticky;
+    top: 300px;
+    left: 16px;
+    }
+    .container h2{
+        color: rgb(26, 1, 1);
+        font-size: 30px;
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+
+
+
+
+
+
+
+    /*read more*/
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: static;
+        background-color: #f9f9f9;
+        z-index: 1;
+      }
+      
+      .dropdown-content p {
+        color: black;
+        width: 98%;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover{
+        background-color: gray;
+      }
+      
+      
+      .dropdown:hover .dropdown-content {
+         
+        display: block;
+        width: 100%;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+       
+      }
+
+
+   
+    
+    

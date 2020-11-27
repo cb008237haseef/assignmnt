@@ -1,0 +1,105 @@
+.main,
+.main * {
+	box-sizing: border-box;
+}
+.main {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	    
+}
+.main img {
+	max-width: 100%;
+	
+}
+.main .main-first,
+.main-first1,.main-first2,
+.main-first3,.main-first4,
+.main-first5,.main-first6,
+.main-first7,.main-first8,
+.main-first9,.main-first10,
+.main-first11,.main-first12,
+.main-first13,.main-first14 {
+	display: block;
+}
+.main .main-second {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.main:hover .main-second,.main.active .main-second {
+	opacity: 1;
+}
+.main .main-ride {
+	text-align:center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.main .main-ride_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.main.active .main-ride_mobile {
+	display: block;
+}
+
+.history{
+	align-items: center;
+	justify-items: center;
+	
+}
+@media only screen and (max-width:760px){
+		table,tr,th{
+			display: inline-block;
+			padding-left: 100px;
+			padding-right: 100px;
+
+		}
+
+.hme{
+	position: absolute;
+	
+}
+td{
+	padding-bottom: 50px;
+}
+
+
+}
+
+.hry p{
+	
+	font-size: 40px;
+	font-family: 'Aldrich';
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+

@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    
+
+}
+header{
+    background-image: url(pic1/black.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 100%;
+}
+
+.mainnav{
+    overflow: hidden;
+    background-color: #333;
+}
+.mainnav a{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+.dropnav{
+    float: right;
+    overflow: hidden;
+}
+
+.dropnav .btnmain{
+    color: white;
+    padding: 14px 16px;
+    font-size: 18px;
+    outline: none;
+    margin: 0;
+    background-color: inherit;
+    font-family: inherit;
+
+}
+
+.mainnav a:hover, .dropnav:hover .btnmain{
+    background-color: gray;
+}
+
+.content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(17, 13, 13);
+    width: 100%;
+    z-index: 1;
+}
+.content a{
+    float: right;
+    color: white;
+    text-decoration: none;
+
+}
+
+.content a:hover{
+    background-color:white;
+    color: black;
+}
+.dropnav:hover .content{
+    display: block;
+}
+
+.hd{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+    font-family: inherit;
+    
+} 
+.hdng{
+    text-align: center;
+    background-color: dimgray;
+    width: 100%;
+    font-size: 40px;
+}
+
+.main{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow:3px 3px dimgray;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 2px gray;
+    font-size: 35px;
+}
+.intro{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.int{
+    background-color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bl_tea {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+    width: 100%;
+   
+	/* height: 100%; */
+}
+.bl_tea img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px white;
+    
+   
+}
+.bl_tea .main-first {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+}
+.bl_tea .sec {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.bl_tea:hover .sec,.bl_tea.active .sec {
+	opacity: 1;
+}
+.bl_tea .sec2{
+    height: 100%;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    font-size: 20px;
+    
+    box-shadow: 5px 2px 2px 5px rgb(26, 24, 24) ;
+
+   
+}
+
+.bl_tea .sec2_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.bl_tea.active .sec2_mobile {
+	display: block;
+}
+
+.ma_nav {
+    background-color: lightslategray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.ma_nav h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width:1000px){
+    .ma_nav{
+        cursor: pointer; 
+    }
+    .ma_nav img{
+        height: 600px;
+        
+    } 
+
+    .bl_tea .sec2{
+        
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
+        font-size: 20px; 
+       
+    }
+    .sec2 p {
+        font-size: 25px;
+    }
+    
+}
+
+
+
+
+
+footer{
+	
+    bottom: 0;
+    
+    
+}
+.foot-bd{
+    padding: 0;
+    background-color: gray;
+    
+	box-shadow: 3px 2px 2px 0px rgb(43, 38, 38);
+	box-sizing: border-box;
+	width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: sans-serif;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+@media only screen and (min-width:1000px){
+    .foot-bd{
+        flex-direction:row;
+        
+    }
+    .foot-bd .ft-lf{
+        width: 30%;
+    }
+}
+
+.foot-bd .ft-lf,
+.foot-bd .cen,
+.foot-bd .foot-ryt{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.foot-bd h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.foot-bd h3 span{
+	color:  #0f1620;
+}
+
+
+.foot-bd .footer-links{
+	color:  #1a0202;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.foot-bd .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-links a:hover{
+    color: rgba(3, 29, 2, 0.123);
+}
+
+.foot-bd .footer-company-name{
+	color:  #0a0f14;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.foot-bd .cen{
+    width: 35%;
+    text-align: left;
+}
+
+.foot-bd .cen i{
+	background-color:  #d5dadd;
+	color: #0a0707;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.foot-bd .cen i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.foot-bd .cen p{
+	display: inline-block;
+	color: #0c0101;
+	vertical-align: middle;
+	margin:0;
+}
+
+.foot-bd .cen p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.foot-bd .cen p a{
+	color:  #04470a;
+	text-decoration: none;;
+}
+
+.foot-bd .foot-ryt{
+	width: 20%;
+}
+
+.foot-bd .com-about{
+	line-height: 20px;
+	color:  #010508;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.foot-bd .com-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.foot-bd .ft-sos{
+	margin-top: 25px;
+}
+
+.foot-bd .ft-sos a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media only screen  (max-width: 1000px) {
+
+	.foot-bd{
+		font: bold 14px sans-serif;
+	
+	}
+
+	.foot-bd .ft-lf,
+	.foot-bd .cen,
+	.foot-bd .foot-ryt{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.foot-bd .cen i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+
+}
